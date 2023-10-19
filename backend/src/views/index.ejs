@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- Agregar hoja de estilo si se desea -->
+</head>
+
+<body>
+    <h1>Credit Card Form</h1>
+    <form id="creditCardForm" action="/" method="POST">
+        <label for="cardType">Card Type:</label>
+        <select id="cardType" name="cardType">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="americanexpress">American Express</option>
+        </select>
+        <label for="cardNumber">Credit Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber">
+
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="date" id="expiryDate" name="expiryDate">
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv">
+
+        <button type="submit">Validate Card</button>
+    </form>
+    <div id="validationResult"></div>
+
+
+</body>
+
+</html>
